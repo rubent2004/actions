@@ -1,4 +1,4 @@
-name: Prueba de GitHub Actions
+name: Hola mundo
 on: 
   push:
     branches:
@@ -29,3 +29,7 @@ jobs:
     steps:
       - name: Otra Tarea
         run: echo "Esta es otra tarea"
+      - name: Checkout
+        uses: actions/checkout@v6.0.0
+      - name: LS
+        run: ls -la
