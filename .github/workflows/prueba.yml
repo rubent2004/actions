@@ -3,9 +3,11 @@ on:
   push:
     branches:
       - master
+      - pr
   pull_request:
     branches:
-      - master
+      - master}
+      - pr
 
 jobs:
   hola:
