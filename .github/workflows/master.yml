@@ -14,4 +14,6 @@ jobs:
           uses: actions/setup-node@v6.0.0
         - name: node version
           run: node -v
+        - name: npm dependencies
+          run: npm install
         
