@@ -12,4 +12,4 @@ jobs:
     steps:
       - name: Test
         run: |
-          echo "Valor: $MY_VAR"
+          echo "Valor: ${{ vars.MY_VARIABLE_2}}"
