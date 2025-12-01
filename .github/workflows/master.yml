@@ -6,8 +6,9 @@ jobs:
   test_build:
     runs-on: ubuntu-latest
     steps:
-        - name: Checkout
+        - name: Checkout code
           uses: actions/checkout@v6.0.0
+
         - name: ls
-          uses: ./github/actions/my-action
+          uses: ./.github/actions/my-action
         
