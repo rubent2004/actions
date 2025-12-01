@@ -6,7 +6,7 @@ on:
       - pr
   pull_request:
     branches:
-      - master}
+      - master
       - pr
 
 jobs:
@@ -27,10 +27,8 @@ jobs:
       
   otra_tarea:
     runs-on: ubuntu-latest
-    needs: hola
+    needs: [hola]
     steps:
-      - name: Otra Tarea
-        run: echo "Esta es otra tarea"
       - name: Checkout
         uses: actions/checkout@v6.0.0
       - name: LS
