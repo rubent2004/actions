@@ -19,6 +19,8 @@ jobs:
         - name: node version
           run: node -v
 
-        - name: npm dependencies
-          run: npm install
+        - name: PHP
+          uses: shivammathur/setup-php@v2
+          with:
+            php-version: '8.3'
         
