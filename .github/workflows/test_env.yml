@@ -1,0 +1,20 @@
+name: variables
+
+on: [push]
+
+jobs:
+  test_env:
+    runs-on: ubuntu-latest
+    
+    env:
+      MY_VAR: Mi variable de entorno local
+
+    steps:
+      - name: Test
+        run: |
+          echo "Valor: ${{ vars.MY_VARIABLE_2}}"
+          echo "Valor: $MY_VAR"
+      
+      - name: secret test
+        run: |
+          echo "Valot Secreto: ${{ secrets.MY_SECRET }}"
